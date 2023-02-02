@@ -1,0 +1,52 @@
+#noteBox *{
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#noteBox {
+    margin-top: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#noteArea {
+    resize: none;
+    width: 100%;
+    height: 70%;
+    padding: 7px;
+    background-color: #fffced;
+    border: 1px solid #ffeaa5;
+}
+
+#noteArea:focus {
+    outline: none;
+    border: 1px solid #ffde71;
+    box-shadow: inset 0 0 0 1px #ffde71;
+}
+
+#saveButton {
+    width: 40%;
+    background: -webkit-linear-gradient(top,#ffe700 0,#ffc000 100%);
+    color: #333;
+    border: 1px solid #ffc000;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: inset 0 0 0 1px #fff599;
+    text-shadow: 1px 1px 0 rgb(255 255 255 / 50%);
+    font-weight: bold;
+    height: 36px;
+    cursor: pointer;
+}
+
+#noteArea::-webkit-scrollbar{
+	width: 10px;
+}
+
+#noteArea::-webkit-scrollbar-thumb{
+	background-color: #ffde71;
+	width: 8px;
+	border-radius: 15px;
+}
